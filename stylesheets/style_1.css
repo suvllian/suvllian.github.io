@@ -198,23 +198,6 @@ a img {
     width: 100%;
     z-index: 1;
 }
-.caption-3::after {
-    background: #b3b3b3 none repeat scroll 0 0;
-    content: attr(data-title);
-    font-size: 40px;
-    font-weight: 300;
-    padding: 30px;
-    top: 0;
-    transform: translateY(-100%);
-}
-.caption-3::before {
-    background: #b3d9d9 none repeat scroll 0 0;
-    content: "..." attr(data-description) "...";
-    font-size: 18px;
-    padding: 20px;
-    top: 50%;
-    transform: translateY(100%);
-}
 .caption-3:hover::after, .caption-3:hover::before {
     transform: translateY(0%);
     opacity: 0.8;
