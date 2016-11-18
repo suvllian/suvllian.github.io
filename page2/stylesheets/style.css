@@ -1,0 +1,371 @@
+/* line 1, ../sass/style.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 6, ../sass/style.scss */
+*, *::after, *::before {
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+/* line 11, ../sass/style.scss */
+body {
+  background: #f9f9f9 none repeat scroll 0 0;
+  color: #89867e;
+  font-family: "Lato",Calibri,Arial,sans-serif;
+}
+
+/* line 17, ../sass/style.scss */
+header {
+  background: rgba(0, 0, 0, 0.01) none repeat scroll 0 0;
+  text-align: center;
+  padding: 2em;
+  border-bottom: 2px solid #aaa;
+}
+
+/* line 24, ../sass/style.scss */
+header h1 {
+  font-size: 2.625em;
+  font-weight: 300;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* line 31, ../sass/style.scss */
+header span {
+  color: #ceccc6;
+  display: block;
+  font-size: 120%;
+  padding: 0 0 0.6em 0.1em;
+}
+
+/* line 38, ../sass/style.scss */
+a {
+  color: #888;
+  font-size: 110%;
+  text-decoration: none;
+}
+
+/* line 44, ../sass/style.scss */
+a:hover {
+  color: #b3d9d9;
+  cursor: pointer;
+}
+
+/* line 49, ../sass/style.scss */
+footer {
+  padding: 30px 6px;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  background-color: #e0e0e0;
+}
+
+/* line 57, ../sass/style.scss */
+a img {
+  border: medium none;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("../fonts/iconfont.eot");
+  /* IE9*/
+  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */
+}
+/* line 69, ../sass/style.scss */
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 1.1em;
+  font-style: normal;
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 78, ../sass/style.scss */
+.link {
+  height: 2em;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 0.23em;
+}
+/* line 84, ../sass/style.scss */
+.link a {
+  font-size: 1.08em;
+}
+/* line 88, ../sass/style.scss */
+.link .a-left {
+  float: left;
+  margin-left: 2%;
+}
+/* line 93, ../sass/style.scss */
+.link .a-right {
+  float: right;
+  margin-right: 2%;
+}
+
+/* line 99, ../sass/style.scss */
+.all {
+  position: relative;
+  width: 100%;
+  background-color: #e0e0e0;
+}
+/* line 105, ../sass/style.scss */
+.all h1, .all h2, .all h3, .all h4, .all h5 {
+  color: teal;
+  font-weight: 500;
+  line-height: 1.5;
+}
+/* line 111, ../sass/style.scss */
+.all section {
+  padding-bottom: 28px;
+}
+/* line 115, ../sass/style.scss */
+.all .content {
+  max-width: 68em;
+  margin: 0 auto;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+/* line 123, ../sass/style.scss */
+.all .content .sec-top {
+  height: 15em;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 2.5em;
+  padding-left: 2.32em;
+}
+/* line 131, ../sass/style.scss */
+.all .content .sec-top .sec-top-img {
+  width: 10em;
+  height: 10em;
+  float: left;
+}
+/* line 135, ../sass/style.scss */
+.all .content .sec-top .sec-top-img img {
+  width: 100%;
+  height: 100%;
+}
+/* line 141, ../sass/style.scss */
+.all .content .sec-top .sec-top-information {
+  float: left;
+  height: 10em;
+  padding-left: 2.32em;
+}
+/* line 146, ../sass/style.scss */
+.all .content .sec-top .sec-top-information ul li {
+  color: #fff;
+  line-height: 1.68em;
+  font-size: 1.16em;
+}
+/* line 152, ../sass/style.scss */
+.all .content .sec-top .sec-top-information .email::before {
+  content: "\ead7";
+  padding-right: 6px;
+}
+/* line 157, ../sass/style.scss */
+.all .content .sec-top .sec-top-information .wechat::before {
+  content: "\3488";
+  padding-right: 6px;
+}
+/* line 162, ../sass/style.scss */
+.all .content .sec-top .sec-top-information .weibo::before {
+  content: "\eadf";
+  padding-right: 6px;
+}
+/* line 167, ../sass/style.scss */
+.all .content .sec-top .sec-top-information .github::before {
+  content: "\ed32";
+  padding-right: 6px;
+}
+/* line 172, ../sass/style.scss */
+.all .content .sec-top .sec-top-information .rss::before {
+  content: "\ebca";
+  padding-right: 6px;
+}
+/* line 178, ../sass/style.scss */
+.all .content .sec-top .set-top-me {
+  float: right;
+  padding-right: 1.62em;
+}
+/* line 181, ../sass/style.scss */
+.all .content .sec-top .set-top-me h1 {
+  font-size: 4.8em;
+  font-weight: 600;
+  color: #fff;
+}
+/* line 187, ../sass/style.scss */
+.all .content .sec-top .set-top-me h2 {
+  margin-top: -0.32em;
+  font-size: 1.36em;
+  font-weight: 500;
+  color: #fff;
+}
+/* line 196, ../sass/style.scss */
+.all .content .sec-title-warpper::before {
+  background-color: #333;
+  border-radius: 100%;
+  color: #fff;
+  content: "\ea38";
+  float: left;
+  font-size: 26px;
+  height: 42px;
+  line-height: 36px;
+  padding: 4px;
+  text-align: center;
+  text-rendering: auto;
+  transform: translate(0px, 0px);
+  width: 42px;
+}
+/* line 213, ../sass/style.scss */
+.all .content .sec-title-warpper .sec-title {
+  float: left;
+  margin: 0 0 0 10px;
+  padding: 0;
+}
+/* line 219, ../sass/style.scss */
+.all .content .sec-title-warpper .sec-title-ch {
+  float: left;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+/* line 225, ../sass/style.scss */
+.all .content .sec-title-warpper .sec-title-en {
+  clear: left;
+  color: teal;
+  float: left;
+  font-size: 16px;
+  font-variant: small-caps;
+  font-weight: 700;
+}
+/* line 236, ../sass/style.scss */
+.all .content .timeline-wrapper::after {
+  background-color: #333;
+  border-radius: 100%;
+  color: #fff;
+  content: " ";
+  float: left;
+  font-family: FontAwesome;
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+  margin-left: 17px;
+  margin-top: -7px;
+  padding: 0;
+  text-align: center;
+  text-rendering: auto;
+  transform: translate(0px, 0px);
+  width: 14px;
+}
+/* line 255, ../sass/style.scss */
+.all .content .timeline {
+  border-left: 4px solid #333;
+  margin: 0 0 0 22px;
+  padding-left: 26px;
+  padding-top: 42px;
+}
+/* line 262, ../sass/style.scss */
+.all .content dl, .all .content ol, .all .content ul, .all .content dd {
+  line-height: 1.42857;
+  color: #333;
+  fon-weight: 400;
+}
+/* line 268, ../sass/style.scss */
+.all .content strong {
+  font-weight: 700;
+}
+/* line 271, ../sass/style.scss */
+.all .content a:link, .all .content a:visited, .all .content strong {
+  color: teal;
+}
+/* line 277, ../sass/style.scss */
+.all .content .education-undergraduate.timeline-item::before {
+  content: "\ea95";
+}
+/* line 281, ../sass/style.scss */
+.all .content .timeline-item {
+  padding-bottom: 14px;
+}
+/* line 285, ../sass/style.scss */
+.all .content .timeline-item::before {
+  background-color: teal;
+  border-radius: 100%;
+  color: #fff;
+  float: left;
+  font-size: 23px;
+  height: 38px;
+  line-height: 26px;
+  margin-left: -47px;
+  margin-top: -6px;
+  padding: 6px;
+  position: absolute;
+  text-align: center;
+  text-rendering: auto;
+  transform: translate(0px, 0px);
+  width: 38px;
+}
+/* line 303, ../sass/style.scss */
+.all .content .timeline-title {
+  background-color: #333;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.33;
+  margin: 20px 0 0 -26px;
+  padding: 3px 10px 3px 26px;
+  width: 98%;
+}
+/* line 315, ../sass/style.scss */
+.all .content .education-name {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 10px 0 5px;
+}
+/* line 321, ../sass/style.scss */
+.all .content .education-honor {
+  font-size: 16px;
+}
+/* line 325, ../sass/style.scss */
+.all .content #side {
+  background-color: #fff;
+  padding: 0 20px 3em 20px;
+  position: absolute;
+  width: 360px;
+}
+/* line 331, ../sass/style.scss */
+.all .content #side .me {
+  padding-bottom: 20px;
+  text-align: center;
+}
+/* line 335, ../sass/style.scss */
+.all .content #side .me .me-image {
+  background-image: url("./../1.jpg");
+  background-position: center center;
+  background-size: 120% auto;
+  border: 5px solid teal;
+  border-radius: 50%;
+  height: 160px;
+  margin: 20px auto 10px;
+  width: 160px;
+}
+/* line 348, ../sass/style.scss */
+.all .content #side .infor h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+/* line 356, ../sass/style.scss */
+.all .content #main {
+  margin-left: 360px;
+  min-height: 100%;
+  padding: 20px 0 3em 2em;
+  position: relative;
+  background-color: #eee;
+}

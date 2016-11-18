@@ -52,6 +52,22 @@ a img {
 	height: 2em;
 	width: 100%;
 	background-color: #fff;
+    padding-top: 0.23em;
+    
+}
+
+.link a{
+    font-size: 1.08em;
+}
+
+.a-left{
+    float: left;
+    margin-left: 2%;
+}
+
+.a-right{
+   float: right;
+   margin-right: 2%;
 }
 
 .main{
