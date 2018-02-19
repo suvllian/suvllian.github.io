@@ -11,6 +11,7 @@ body{
 	background: #f9f9f9 none repeat scroll 0 0;
 	color: #89867e;
     font-family: "Lato",Calibri,Arial,sans-serif;
+    min-width: 960px;
 }
 
 header{
