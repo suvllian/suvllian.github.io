@@ -31,5 +31,30 @@
   </div>
 </body>
 
-<script src="./script/index.js"></script>
+<script>
+  var dayDuration = 86400000, hourDuration = 3600000, minuteDuration = 60000
+  var loveTime = 1515600000000
+  var timeContentDom = document.getElementById('time-content')
+
+  function renderDuration() {
+    var currentTime = new Date().getTime()
+    var duration = currentTime - loveTime
+    
+    var daysReminder = duration % dayDuration
+    var days = (duration - daysReminder) / dayDuration
+    var hourReminder = daysReminder % hourDuration
+    var hours = (daysReminder - hourReminder) / hourDuration
+    var seconds = hourReminder % minuteDuration
+    var minutes = (hourReminder - seconds) / minuteDuration
+    seconds = Math.floor(seconds / 1000)
+
+    timeContentDom.innerHTML = '<span>' + days + '</span><span class="time-count">days </span>' + 
+        '<span>' + String(hours).padStart(2, 0) + '</span><span class="time-count">hours </span>' + 
+        '<span>' + String(minutes).padStart(2, 0) + '</span><span class="time-count">minutes </span>' +
+        '<span>' + String(seconds).padStart(2, 0) + '</span><span class="time-count">seconds </span>'
+  }
+
+  renderDuration()
+  setInterval(renderDuration, 1000)
+</script>
 </html>

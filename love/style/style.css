@@ -52,6 +52,10 @@ header span{
   font-weight: 300;
 }
 
+.time-content span {
+  min-width: 30px;
+}
+
 .time-count {
   font-size: 0.6em;
 }
