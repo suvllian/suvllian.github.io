@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Demon loves carol</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+  <link rel="Bookmark" href="favicon.ico" />
+  <link rel="Shortcut Icon" href="favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="./style/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>You are my destiny.</h1>
+      <span>At 2018-1-11,Demon fell in love with carol.</span>
+    </header>
+    <section class="words">
+      <p>I hope you can attain what you want. I hope you can find a person you love, and he also loves you. Don't live a reluctant life. Maybe everything will be back again after all the landscapes have be seen, Who knows? The future is not sure, I look forward to the day. I do not want you are too tired, I hope you are happy, which will make me feel very happy.
+        thank you for everything. Best wishes.</p>
+    </section>
+    <section class="froze">
+      <p>2018-3-26 21:40,Time froze.</p>
+    </section>
+    <section class="time">
+      <p id="time-content"> 
+        <span>74</span> <span class="time-count">days </span>
+        <span>21</span><span class="time-count">hours </span>
+        <span>40</span><span class="time-count">minutes </span>
+        <span>00</span><span class="time-count">seconds </span>
+      </p>
+    </section>
+  </div>
+</body>
+
+<script>
+  var dayDuration = 86400000, hourDuration = 3600000, minuteDuration = 60000
+  var loveTime = 1515600000000
+  var timeContentDom = document.getElementById('time-content')
+
+  function renderDuration() {
+    var currentTime = new Date().getTime()
+    var duration = currentTime - loveTime
+    
+    var daysReminder = duration % dayDuration
+    var days = (duration - daysReminder) / dayDuration
+    var hourReminder = daysReminder % hourDuration
+    var hours = (daysReminder - hourReminder) / hourDuration
+    var seconds = hourReminder % minuteDuration
+    var minutes = (hourReminder - seconds) / minuteDuration
+    seconds = Math.floor(seconds / 1000)
+
+    timeContentDom.innerHTML = '<span>' + days + '</span><span class="time-count">days </span>' + 
+        '<span>' + String(hours).padStart(2, 0) + '</span><span class="time-count">hours </span>' + 
+        '<span>' + String(minutes).padStart(2, 0) + '</span><span class="time-count">minutes </span>' +
+        '<span>' + String(seconds).padStart(2, 0) + '</span><span class="time-count">seconds </span>'
+  }
+
+  // renderDuration()
+  // setInterval(renderDuration, 1000)
+</script>
+</html>

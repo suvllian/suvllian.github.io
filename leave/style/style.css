@@ -1,0 +1,71 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body{
+	background: #f9f9f9 none repeat scroll 0 0;
+	color: #89867e;
+  font-family: "Lato",Calibri,Arial,sans-serif;
+}
+
+header{
+  text-align: center;
+  padding: 2em;
+  background: rgba(0, 0, 0, 0.01) none repeat scroll 0 0;
+}
+
+header h1{
+	font-size: 2em;
+  font-weight: 300;
+  line-height: 1.3;
+  margin: 0;
+}
+
+header span{
+	color: #ceccc6;
+  display: block;
+  padding: 0 0 0.6em 0.1em;
+}
+
+.words, .froze {
+	max-width: 69em;
+	margin: 0 auto;
+  padding: 0 2em 2em 2em;
+}
+
+.words p {
+  font-size: 1.8em;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.froze p {
+  font-size: 1.6em;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.time {
+  padding-bottom: 36px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 300;
+}
+
+.time-content span {
+  min-width: 30px;
+}
+
+.time-count {
+  font-size: 0.6em;
+}
