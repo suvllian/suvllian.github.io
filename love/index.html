@@ -9,24 +9,41 @@
   <link rel="Bookmark" href="favicon.ico" />
   <link rel="Shortcut Icon" href="favicon.ico" />
   <link rel="stylesheet" type="text/css" href="./style/style.css">
+  <link rel="stylesheet" type="text/css" href="./../common/header.css">
 </head>
 
 <body>
   <div class="container">
-    <header class="header">
-      <h1>You are my destiny.</h1>
-      <span>At 2018-1-11,Demon fell in love with carol.</span>
+    <div class="link">
+      <span class="a-left">
+        <a href="../resume/index.html">Prev——Resume</a>
+      </span>
+      <span class="a-right">
+        <a href="../website-index/index.html">Next——website-index</a>
+      </span>
+    </div>
+    <header>
+      <h1>If Want,One Thousands Ways</h1>
+      <span>瓦尔登湖畔一棵松(Suvllian)</span>
+      <a href="http://www.suvllian.com">Learn More</a>
     </header>
-    <section class="words">
-      <p>For you see, each day I love you more. Today more than yesterday and less than tomorrow.</p>
-    </section>
-    <section class="time">
-      <p id="time-content"> 
-        <span>0</span> <span class="time-count">days </span>
-        <span>0</span><span class="time-count">hours </span>
-        <span>0</span><span class="time-count">minutes </span>
-        <span>0</span><span class="time-count">seconds </span>
-      </p>
+
+    <section class="main">
+      <header class="header">
+        <h1>You are my destiny.</h1>
+        <span>At 2018-1-11,Demon fell in love with carol.</span>
+      </header>
+      <section class="words">
+        <p>For you see, each day I love you more. Today more than yesterday and less than tomorrow.</p>
+      </section>
+      <section class="time">
+        <p id="time-content">
+          <span>0</span> <span class="time-count">days </span>
+          <span>0</span><span class="time-count">hours </span>
+          <span>0</span><span class="time-count">minutes </span>
+          <span>0</span><span class="time-count">seconds </span>
+        </p>
+      </section>
     </section>
   </div>
 </body>
@@ -39,7 +56,7 @@
   function renderDuration() {
     var currentTime = new Date().getTime()
     var duration = currentTime - loveTime
-    
+
     var daysReminder = duration % dayDuration
     var days = (duration - daysReminder) / dayDuration
     var hourReminder = daysReminder % hourDuration
@@ -48,13 +65,14 @@
     var minutes = (hourReminder - seconds) / minuteDuration
     seconds = Math.floor(seconds / 1000)
 
-    timeContentDom.innerHTML = '<span>' + days + '</span><span class="time-count">days </span>' + 
-        '<span>' + String(hours).padStart(2, 0) + '</span><span class="time-count">hours </span>' + 
-        '<span>' + String(minutes).padStart(2, 0) + '</span><span class="time-count">minutes </span>' +
-        '<span>' + String(seconds).padStart(2, 0) + '</span><span class="time-count">seconds </span>'
+    timeContentDom.innerHTML = '<span>' + days + '</span><span class="time-count">days </span>' +
+      '<span>' + String(hours).padStart(2, 0) + '</span><span class="time-count">hours </span>' +
+      '<span>' + String(minutes).padStart(2, 0) + '</span><span class="time-count">minutes </span>' +
+      '<span>' + String(seconds).padStart(2, 0) + '</span><span class="time-count">seconds </span>'
   }
 
   renderDuration()
   setInterval(renderDuration, 1000)
 </script>
+
 </html>

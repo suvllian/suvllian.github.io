@@ -1,16 +1,10 @@
-##瓦尔登湖畔一棵松（Suvllian)
-###通过做一些简单有趣的页面在这里记录生活
-站点地址：http://suvllian.github.io/
-***
-![Logo](./page2/1.jpg)  
+## 瓦尔登湖畔一棵松
+
+在这里做一些简单有趣的页面去记录生活，站点地址: http://suvllian.github.io/
+
+---
   
-###Page1(2016-11-12):[记录去过的城市](http://suvllian.github.io/)
->今年去过的城市：北京、天津、青岛、重庆、成都。  
-每个城市选择一张照片，用before和after伪类给每张图片添加简介。  
-用CSS3实现常见的动画效果。  
-
-
-###Page2(2016-11-19):[一个简历页面](http://suvllian.github.io/page2/index.html)  
->参考了网络上的一些简历设计，做了一个简历页面。  
-同样是使用了before和after伪类元素，学习了利用content属性添加图标。  
-熟悉了HTML语义化标签的编写。
+* [记录2016年去过的城市](http://suvllian.github.io/)(2016-11-12): 今年去了北京、天津、青岛、重庆、成都，每个城市选择一张照片做了一个展示页面。
+* [简历页面](http://suvllian.github.io/resume/index.html)  (2016-11-19): 参考了网络上的一些简历设计，做了一个简历页面。
+* [Love record](http://suvllian.github.io/love/index.html)(2018-2-20): 从特定时刻开始即时，用来撩妹的。
+* [个人网站首页](http://suvllian.github.io/website-index/index.html)(2018-10-10): 个人网站简化，网站博客不再维护，只维护首页。
